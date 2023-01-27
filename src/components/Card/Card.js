@@ -1,6 +1,6 @@
-import './Card.css'
+import { useState, Fragment } from 'react'
 import { getPokemon } from '../../services/getPokemon'
-import { useState } from 'react'
+import './Card.css'
 
 export default function Card({ url }) {
   const [data, setData] = useState()
@@ -9,18 +9,18 @@ export default function Card({ url }) {
     setData(res)
   })
   return (
-    <article>
+    <Fragment>
       {
         data !== undefined
-          ? (<div>
+          ? (<article>
             <h4>{data.id}</h4>
             <h4>{data.forms[0].name}</h4>
             <img
-              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`}/>
-
-          </div>)
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`}
+              alt={`Photo of ${data.name}`}/>
+          </article>)
           : null
       }
-    </article>
+    </Fragment>
   )
 }

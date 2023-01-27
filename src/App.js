@@ -1,4 +1,4 @@
-import './assets/App.css';
+import './assets/css/App.css';
 import Pokemon from './pages/Pokemon'
 
 export default function App() {
