@@ -1,0 +1,13 @@
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%,15rem),1fr));
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 15rem;
+  margin:1em;
+}
+
+.cards-wrapper img {
+  width: var(--img-width);
+  height: var(--img-height);
+}

@@ -1,0 +1,23 @@
+.search-bar button {
+  background-color: var(--color-primary);
+  color: var(--color-button-text);
+  border-radius: 25px;
+  font-family: inherit;
+  padding: 5px 15px;
+  margin: 0.5rem;
+}
+
+.search-bar button:hover {
+  background-color: var(--color-primary-hover);
+  border-radius: 25px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.input-search {
+}

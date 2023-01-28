@@ -3,10 +3,10 @@ import './Cards.css'
 
 export default function Cards({values}) {
   return (
-    <div>
+    <div className='cards-wrapper'>
       {
         values.map(pokemon => (
-          <li key={pokemon.name}>
+          <li key={pokemon.name} >
             <Card url={pokemon.url}/>
           </li>
         ))
