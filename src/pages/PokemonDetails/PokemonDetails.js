@@ -1,18 +1,41 @@
-import React from 'react'
-import './PokemonDetails.css'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import './PokemonDetails.css'
+import getPokemonByName from '../../services/getPokemonByName'
 
 
-export default function PokemonDetails({ pokemon }) {
-  const { pokemonId } = useParams()
+export default function PokemonDetails() {
+  const { pokemonName } = useParams()
+  const [pokemon, setPokemon] = useState()
+
+  useEffect(() => {
+    if(pokemonName !== undefined) {
+      getPokemonByName(pokemonName).then((res) =>{
+        setPokemon(res)
+      })
+    }
+
+  }, [pokemonName])
+
   return (
     <div className="detail-wrapper">
-      <section>
-        <article>
-          <h4>DETAILS</h4>
-          <h4>{pokemon.name}</h4>
-        </article>
-      </section>
+      {
+        pokemon !== undefined
+          ? <section>
+            <article>
+              <h4>DETAILS</h4>
+              <h4>{pokemon.forms[0].name}</h4>
+              {pokemon.stats.map(stat => (
+              <div>
+                <p>{stat.stat.name}</p>
+                <p>{stat.base_stat}</p>
+              </div>
+              ))
+            }
+            </article>
+          </section>
+          : null
+      }
     </div>
   )
 }

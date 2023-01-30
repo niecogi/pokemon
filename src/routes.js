@@ -13,7 +13,7 @@ export default function () {
   }, {
     path: 'pokemon',
     children: [{
-      path: ':pokemonId',
+      path: ':pokemonName',
       element: <PokemonDetails/>
     }]
   }])
