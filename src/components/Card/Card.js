@@ -1,17 +1,19 @@
 import { useState, Fragment } from 'react'
 import { getPokemon } from '../../services/getPokemon'
 import './Card.css'
+import { useNavigate } from 'react-router-dom'
 
 export default function Card({ url }) {
   const [data, setData] = useState()
+  const navigateTo = useNavigate()
   getPokemon(url).then((res) => {
     setData(res)
   })
   return (
-    <Fragment>
+    <div className='card-wrapper' onClick={() => navigateTo(`pokemon/${data.forms[0].name}`) }>
       {
         data !== undefined
-          ? (<article className='card-wrapper'>
+          ? (<article className='card-pokemon'>
             <p className='pokemon-id'>{`Nº ${data.id}`}</p>
             <p className='pokemon-name'>{data.forms[0].name}</p>
             <img
@@ -27,6 +29,6 @@ export default function Card({ url }) {
           </article>)
           : null
       }
-    </Fragment>
+    </div>
   )
 }

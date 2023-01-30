@@ -24,6 +24,9 @@ export default function PokemonDetails() {
           ? <section>
             <article>
               <h4>DETAILS</h4>
+              <img
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`}
+                alt={`${pokemon.name}`}/>
               <h4>{pokemon.forms[0].name}</h4>
               {pokemon.stats.map(stat => (
               <div>

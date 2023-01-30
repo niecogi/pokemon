@@ -1,4 +1,7 @@
-.card-wrapper{
+.card-wrapper {
+  cursor: pointer;
+}
+.card-pokemon{
   width: var(--card-width);
   height: var(--card-height);
   font-size: 12px;
@@ -14,14 +17,14 @@
   align-items: center;
 
 }
-.card-wrapper img {
+.card-pokemon img {
   order: 1;
 }
-.card-wrapper .pokemon-name{
+.card-pokemon .pokemon-name{
   order:3;
 }
 
-.card-wrapper .pokemon-id {
+.card-pokemon .pokemon-id {
   order:2;
   font-family: "Flexo-Bold",arial,sans-serif;
   color: #919191;
