@@ -1,14 +1,14 @@
-import './assets/css/App.css';
-import Pokemon from './pages/Pokemon'
-import Searchbar from './components/Searchbar'
 import React from 'react'
+import './assets/css/App.css'
+import { HashRouter } from 'react-router-dom'
+import Routes from './routes'
 
 export default function App() {
   return (
     <div className="App">
-      <h1> Pokemon </h1>
-      <Searchbar/>
-      <Pokemon/>
+      <HashRouter>
+        <Routes/>
+      </HashRouter>
     </div>
   )
 }
