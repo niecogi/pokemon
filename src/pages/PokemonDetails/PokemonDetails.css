@@ -1,0 +1,10 @@
+.detail-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-wrapper img {
+  width: var(--img-width-details);
+  height: var(--img-height-details);
+}

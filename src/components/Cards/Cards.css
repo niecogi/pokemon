@@ -8,6 +8,6 @@
 }
 
 .cards-wrapper img {
-  width: var(--img-width);
-  height: var(--img-height);
+  width: var(--img-width-card);
+  height: var(--img-height-card);
 }

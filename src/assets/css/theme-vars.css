@@ -1,6 +1,8 @@
 :root {
-  --img-width: 100px;
-  --img-height: 100px;
+  --img-width-card: 100px;
+  --img-height-card: 100px;
+  --img-width-details: 300px;
+  --img-height-details: 300px;
   --card-width: 200px;
   --card-height: 200px;
 }

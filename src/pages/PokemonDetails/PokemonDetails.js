@@ -21,7 +21,7 @@ export default function PokemonDetails() {
     <div className="detail-wrapper">
       {
         pokemon !== undefined
-          ? <section>
+          ?
             <article>
               <h4>DETAILS</h4>
               <img
@@ -36,7 +36,6 @@ export default function PokemonDetails() {
               ))
             }
             </article>
-          </section>
           : null
       }
     </div>
