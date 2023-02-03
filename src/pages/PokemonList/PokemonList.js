@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { getPokemons } from '../../services/getPokemons'
 import Cards from '../../components/Cards'
 import Pagination from '../../components/Pagination'
-import './PokemonList.css'
 import Searchbar from '../../components/Searchbar'
+import './PokemonList.css'
+import Header from '../../components/Header'
 
 export default function PokemonList() {
   const [data, setData] = useState([])
@@ -28,6 +29,7 @@ export default function PokemonList() {
 
   return (
     <div className="pokemons-wrapper">
+      <Header/>
       <Searchbar/>
       <Pagination
         page={page + 1}

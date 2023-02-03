@@ -1,10 +1,19 @@
 .detail-wrapper {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
+  margin: 10%;
 }
 
 .detail-wrapper img {
   width: var(--img-width-details);
   height: var(--img-height-details);
+}
+
+.detail-card-background {
+  background: linear-gradient(to right,#7b62a3, #0075BE);
+}
+.detail-pokemon-name {
+  text-align: center;
 }

@@ -23,3 +23,10 @@ h4 {
   margin: 1.33em 0;
   font-weight: bold;
 }
+
+#light {
+  background-color: ghostwhite;
+}
+#dark {
+  background-color: #30404f;
+}
