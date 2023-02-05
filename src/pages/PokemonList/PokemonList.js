@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { getPokemons } from '../../services/getPokemons'
-import Cards from '../../components/Cards'
-import Pagination from '../../components/Pagination'
-import Searchbar from '../../components/Searchbar'
+import { Cards, Pagination, Searchbar, Header, ViewMode } from '../../components'
 import './PokemonList.css'
-import Header from '../../components/Header'
 
 export default function PokemonList() {
   const [data, setData] = useState([])
   const [page, setPage] = useState(0)
   const [total, setTotal] = useState(0)
+  const [mode, setMode] = useState('grid')
   useEffect(() => {
     getPokemons(25, 25 * page).then((res) => {
       setData(res.results)
@@ -27,15 +25,31 @@ export default function PokemonList() {
     setPage(nextPage)
   }
 
+  function listViewMode() {
+    setMode('list')
+  }
+
+  function gridViewMode() {
+    setMode('grid')
+  }
+
   return (
-    <div className="pokemons-wrapper">
+    <div className="pokemons-wrapper" id={mode}>
       <Header/>
       <Searchbar/>
-      <Pagination
-        page={page + 1}
-        totalPages={total}
-        onLeftClick={lastPage}
-        onRightClick={nextPage}/>
+      <div className='function-wrapper'>
+        <Pagination
+          page={page + 1}
+          totalPages={total}
+          onLeftClick={lastPage}
+          onRightClick={nextPage}/>
+        <ViewMode
+          listViewMode={listViewMode}
+          gridViewMode={gridViewMode}
+        />
+      </div>
+
+
       <Cards values={data}/>
     </div>
   )

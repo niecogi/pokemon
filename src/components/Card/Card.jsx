@@ -1,8 +1,8 @@
 import { useState, Fragment } from 'react'
 import { getPokemon } from '../../services/getPokemon'
-import './Card.css'
 import { useNavigate } from 'react-router-dom'
 import { capitalizeFirstLetter } from '../../services/capitalizeFirstLetter'
+import './Card.css'
 
 export default function Card({ url }) {
   const [data, setData] = useState()

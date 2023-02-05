@@ -9,7 +9,7 @@ export default function App() {
   const [theme, setTheme] = useState('light')
 
   function changeTheme() {
-    setTheme((curr) => curr ==='light' ? 'dark':' light')
+    setTheme(theme => theme === 'light' ? 'dark': 'light')
   }
   return (
     <Provider value={{theme, changeTheme}}>

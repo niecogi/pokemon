@@ -1,10 +1,11 @@
 .header-wrapper {
 }
 
-
+.theme-switch {
+}
 .logo-wrapper {
   display: flex;
-  flex-flow: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }

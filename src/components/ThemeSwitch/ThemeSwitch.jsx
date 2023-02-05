@@ -1,25 +1,25 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Context from '../../context/Context'
-import { FiMoon, FiSun } from "react-icons/fi";
+import { FiMoon, FiSun } from 'react-icons/fi'
 import './ThemeSwitch.css'
 
-export default function ThemeSwitch({ url }) {
+export default function ThemeSwitch() {
   const { theme, changeTheme } = useContext(Context)
-  const [svg, setSvg] = useState(<FiMoon />)
-
+  const lightIcon = <FiMoon/>
+  const darkIcon = <FiSun/>
+  const [icon, setIcon] = useState()
   useEffect(() => {
-    if(theme == 'light'){
-      setSvg(<FiMoon />)
-    }else {
-      setSvg(<FiSun />)
-    }
+    theme === 'light'
+    ? setIcon(darkIcon)
+      : setIcon(lightIcon)
+
   }, [theme])
 
 
   return (
     <div className="theme-switch">
       <button onClick={changeTheme}>
-        {svg}
+        {icon}
       </button>
     </div>
   )
