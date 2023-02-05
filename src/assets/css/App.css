@@ -1,3 +1,19 @@
+#light {
+  background-color: var(--color-background);
+  color: var(--text-primary)
+}
+#light button {
+  background-color: var(--color-button);
+}
+
+#dark button {
+  background-color: var(--color-button);
+}
+
+#dark {
+  background-color: var(--color-background);
+  color: var(--text-primary)
+}
 
 h1 {
   display: block;
@@ -22,11 +38,4 @@ h4 {
   font-size: 1em;
   margin: 1.33em 0;
   font-weight: bold;
-}
-
-#light {
-  background-color: ghostwhite;
-}
-#dark {
-  background-color: #30404f;
 }

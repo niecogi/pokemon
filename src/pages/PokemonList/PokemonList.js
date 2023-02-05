@@ -36,7 +36,7 @@ export default function PokemonList() {
   return (
     <div className="pokemons-wrapper" id={mode}>
       <Header/>
-      <Searchbar/>
+      {/*<Searchbar/>*/}
       <div className='function-wrapper'>
         <Pagination
           page={page + 1}

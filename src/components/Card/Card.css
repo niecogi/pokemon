@@ -8,7 +8,6 @@
   padding: 5px 20px;
   margin: auto;
   border-radius: 5px;
-  color: rgba(0, 0, 0, 0.96);
 }
 
 #grid .card-pokemon {
@@ -18,15 +17,11 @@
   align-items: center;
 }
 
-#list .card-pokemon {
-
-}
-
 #light .card-pokemon {
-  background: white;
+  background-color: var(--color-background-card);
 }
 #dark .card-pokemon {
-  background: #30404f;
+  background-color: var(--color-background-card);
 }
 
 .card-pokemon img {

@@ -6,11 +6,11 @@ export default function ({ listViewMode, gridViewMode }) {
   return (
     <div className='view-mode-wrapper'>
       <button onClick={listViewMode}>
-        <FiList/>
+        <FiList className='icon'/>
       </button>
 
       <button onClick={gridViewMode}>
-        <FiGrid/>
+        <FiGrid className='icon'/>
       </button>
     </div>
   )

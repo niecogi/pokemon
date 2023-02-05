@@ -1,3 +1,7 @@
 .view-mode-wrapper {
   padding: 1rem;
 }
+
+.icon {
+  color: var(--color-button-active)
+}

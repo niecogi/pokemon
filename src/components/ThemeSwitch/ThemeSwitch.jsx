@@ -5,8 +5,8 @@ import './ThemeSwitch.css'
 
 export default function ThemeSwitch() {
   const { theme, changeTheme } = useContext(Context)
-  const lightIcon = <FiMoon/>
-  const darkIcon = <FiSun/>
+  const lightIcon = <FiMoon className='icon'/>
+  const darkIcon = <FiSun className='icon'/>
   const [icon, setIcon] = useState()
   useEffect(() => {
     theme === 'light'

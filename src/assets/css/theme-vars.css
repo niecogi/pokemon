@@ -7,6 +7,30 @@
   --card-height: 200px;
 }
 
+:root #dark {
+  --text-primary: #E4E7EB;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-disabled: rgba(255, 255, 255, 0.5);
+  --color-background: #1F2933;
+  --color-background-card: #3e4c59 ;
+  --color-button: rgba(0, 0, 0, 0.54);
+  --color-button-active: #fff;
+  --color-button-hover: rgba(255, 255, 255, 0.08);
+  --color-divider: rgba(255, 255, 255, 0.12);
+}
+
+:root #light {
+  --color-background: #fff;
+  --text-primary: rgba(0, 0, 0, 0.87) ;
+  --text-secondary: rgba(0, 0, 0, 0.6);
+  --text-disabled: rgba(0, 0, 0, 0.38);
+  --color-background-card: rgba(255, 255, 255, 0.12);
+  --color-button: rgba(0, 0, 0, 0.54);
+  --color-button-active: rgba(0, 0, 0, 0.54);
+  --color-button-hover: rgba(0, 0, 0, 0.04);
+  --color-divider: rgba(0, 0, 0, 0.12);
+}
+
 
 :root {
   --color-button: linear-gradient(180deg, #30404f 50%, #5196c5 50%);
