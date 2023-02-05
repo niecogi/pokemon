@@ -14,6 +14,12 @@
 .detail-card-background {
   background: linear-gradient(to right,#7b62a3, #0075BE);
 }
+
+.button-wrapper{
+  display: flex;
+  position: absolute;
+
+}
 .detail-pokemon-name {
   text-align: center;
 }

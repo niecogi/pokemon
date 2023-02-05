@@ -24,7 +24,9 @@ export default function PokemonDetails() {
         pokemon !== undefined
           ?
           <div className="detail-card">
-            <button onClick={() => navigate(-1)}> Back</button>
+            <div className="button-wrapper">
+              <button onClick={() => navigate(-1)}> Back</button>
+            </div>
             <div className="detail-card-background">
               <img
                 className="detail-image"
@@ -49,7 +51,6 @@ export default function PokemonDetails() {
               ))
               }
             </div>
-
           </div>
           : null
       }

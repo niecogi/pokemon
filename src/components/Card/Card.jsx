@@ -1,4 +1,4 @@
-import { useState, Fragment } from 'react'
+import { useState } from 'react'
 import { getPokemon } from '../../services/getPokemon'
 import { useNavigate } from 'react-router-dom'
 import { capitalizeFirstLetter } from '../../services/capitalizeFirstLetter'

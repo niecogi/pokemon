@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getPokemons } from '../../services/getPokemons'
-import { Cards, Pagination, Searchbar, Header, ViewMode } from '../../components'
+import { Cards, Pagination, Header, ViewMode } from '../../components'
 import './PokemonList.css'
 
 export default function PokemonList() {
@@ -48,8 +48,6 @@ export default function PokemonList() {
           gridViewMode={gridViewMode}
         />
       </div>
-
-
       <Cards values={data}/>
     </div>
   )

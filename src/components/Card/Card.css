@@ -10,12 +10,14 @@
   border-radius: 5px;
 }
 
-#grid .card-pokemon {
+.card-pokemon {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
+
+
 
 #light .card-pokemon {
   background-color: var(--color-background-card);

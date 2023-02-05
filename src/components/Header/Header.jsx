@@ -17,6 +17,8 @@ export default function Header() {
     <div className='header-wrapper'>
       <div className='logo-wrapper'>
         <img src={url} />
+      </div>
+      <div className='mode-wrapper'>
         <ThemeSwitch />
       </div>
     </div>

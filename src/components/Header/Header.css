@@ -1,7 +1,10 @@
 .header-wrapper {
 }
 
-.theme-switch {
+.mode-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .logo-wrapper {
   display: flex;
