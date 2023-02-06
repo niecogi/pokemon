@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import { ThemeSwitch } from '../../components'
+import { capitalizeFirstLetter } from '../../services/capitalizeFirstLetter'
 import getPokemonByName from '../../services/getPokemonByName'
 import './PokemonDetails.css'
-import { ThemeSwitch } from '../../components'
 
 
 export default function PokemonDetails() {
   const { pokemonName } = useParams()
   const [pokemon, setPokemon] = useState()
+
   let navigate = useNavigate()
 
   useEffect(() => {
@@ -16,7 +18,6 @@ export default function PokemonDetails() {
         setPokemon(res)
       })
     }
-
   }, [pokemonName])
 
   return (
@@ -24,11 +25,10 @@ export default function PokemonDetails() {
       <div className="button-wrapper">
         <button onClick={() => navigate(-1)}> Back</button>
       </div>
-      <div>
-        <ThemeSwitch />
+      <div className="mode-wrapper">
+        <ThemeSwitch/>
       </div>
-      {
-        pokemon !== undefined
+      { pokemon !== undefined
           ?
           <div className="detail-card">
             <div className="detail-card-background">
@@ -38,7 +38,7 @@ export default function PokemonDetails() {
                 alt={`${pokemon.name}`}/>
             </div>
             <div className="detail-pokemon-name">
-              <h4>{pokemon.forms[0].name}</h4>
+              <h4>{capitalizeFirstLetter(pokemon.forms[0].name)}</h4>
             </div>
             <div className="card-types">
               {pokemon.types.map(type => (
@@ -49,14 +49,16 @@ export default function PokemonDetails() {
             </div>
             <div className="pokemon-stats">
               {pokemon.stats.map(stat => (
-                <div>
-                  <p>{stat.stat.name}: {stat.base_stat} </p>
-                </div>
+                <ul>
+                  <li>
+                    {`${capitalizeFirstLetter(stat.stat.name.replace('-', ' '))}: ${stat.base_stat}`}
+                  </li>
+                </ul>
               ))
               }
             </div>
           </div>
-          : null
+          : <p>{`❌ Pokemon with the name: ${pokemonName} not found ❌`}</p>
       }
     </div>
   )

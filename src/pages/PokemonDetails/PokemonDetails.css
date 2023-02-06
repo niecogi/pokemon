@@ -6,24 +6,28 @@
   height: 100vh;
 }
 
-
 .detail-wrapper img {
   width: var(--img-width-details);
   height: var(--img-height-details);
 }
 
 .detail-card-background {
-  background: linear-gradient(to right,#7b62a3, #0075BE);
+  background: linear-gradient(to right, #7b62a3, #0075BE);
 }
 
-.button-wrapper{
+.button-wrapper {
   display: flex;
   position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   margin: 1rem;
-
 }
+
+.pokemon-stats ul li {
+  gap: 1rem;
+  margin: 3px 0 3px 0;
+}
+
 .detail-pokemon-name {
   text-align: center;
 }

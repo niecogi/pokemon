@@ -14,11 +14,13 @@
 
 .search-bar {
   display: flex;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
   margin: 1rem;
 }
 
 .input-search {
-  width: 40%;
+  width: 50%;
+
 }
