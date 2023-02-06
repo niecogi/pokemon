@@ -13,8 +13,13 @@ Features that can be found in this frontend project are the following:
 - Pagination for displaying large numbers of Pokemons
 - List and grid mode
 - 🌑 Dark and 🌞Light mode (with CSS variables)
+- 🚀 Deployed in Netlify for easy previewing of the project
 
 ## How to run the solution?
+
+You can access a deployed version on netlify at the following link [pokemon-test-front.netlify.app](https://pokemon-test-front.netlify.app/)
+
+or
 
 In the project directory, you can run:
 
@@ -49,6 +54,7 @@ The process could be summarized in the following points:
 4. Configure the route of the pages, structure the content & create components and containers(pages)
 5. Create the necessary functions and services (calls to the api among others)
 6. Stylize the style of the page (CSS)
+7. Deploy (Netlify)
 
 
 ### Issues and solutions
