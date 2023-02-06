@@ -47,6 +47,8 @@
   gap: 10px;
   margin-top: 10px;
   order:4;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-types span {
