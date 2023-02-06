@@ -8,13 +8,13 @@ export default function Pagination(props) {
     <div className='pagination'>
       <button
         className='btn-left'
-        onClick={onLeftClick}> <BiLeftArrow className='icon'/> </button>
+        onClick={onLeftClick}> <BiLeftArrow className='icon' size='1.5rem'/> </button>
       <p>
         {page} de {totalPages}
       </p>
       <button
         className='btn-right'
-        onClick={onRightClick}> <BiRightArrow className='icon'/> </button>
+        onClick={onRightClick}> <BiRightArrow className='icon' size='1.5rem'/> </button>
     </div>
   )
 }

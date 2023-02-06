@@ -1,9 +1,9 @@
 #grid .cards-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%,15rem),1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,20rem),1fr));
   gap: 1rem;
   grid-auto-flow: dense;
-  grid-auto-rows: 15rem;
+  grid-auto-rows: 20rem;
   margin:1em;
 }
 

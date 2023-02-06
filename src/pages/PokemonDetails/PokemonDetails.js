@@ -51,7 +51,7 @@ export default function PokemonDetails() {
               {pokemon.stats.map(stat => (
                 <ul>
                   <li>
-                    {`${capitalizeFirstLetter(stat.stat.name.replace('-', ' '))}: ${stat.base_stat}`}
+                    <p>{`${capitalizeFirstLetter(stat.stat.name.replace('-', ' '))}: ${stat.base_stat}`} </p>
                   </li>
                 </ul>
               ))

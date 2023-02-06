@@ -5,6 +5,7 @@
   font-family: inherit;
   padding: 5px 15px;
   margin: 0.5rem;
+  font-size: var(--font-size-button);
 }
 
 .search-bar button:hover {
@@ -22,5 +23,7 @@
 
 .input-search {
   width: 50%;
+  height: 20px;
+  font-size: var(--font-size);
 
 }

@@ -1,10 +1,14 @@
 :root {
-  --img-width-card: 100px;
-  --img-height-card: 100px;
+  --img-width-card: 150px;
+  --img-height-card: 150px;
   --img-width-details: 300px;
   --img-height-details: 300px;
-  --card-width: 200px;
-  --card-height: 200px;
+  --card-width: 300px;
+  --card-height: 300px;
+  --font-size: 18px;
+  --font-size-button: 18px;
+  --font-size-types: 16px;
+  --font-size-large: 24px ;
 }
 
 :root #dark {
