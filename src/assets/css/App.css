@@ -4,10 +4,12 @@
 }
 #light button {
   border: rgba(255,0,0,0.3);
+  color: var(--color-button-text);
 }
 
 #dark button {
   background-color: var(--color-button);
+  color: var(--color-button-text);
   border: rgba(255,0,0,0.3);
 }
 

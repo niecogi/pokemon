@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import getPokemonByName from '../../services/getPokemonByName'
 import './PokemonDetails.css'
+import { ThemeSwitch } from '../../components'
 
 
 export default function PokemonDetails() {
@@ -20,13 +21,16 @@ export default function PokemonDetails() {
 
   return (
     <div className="detail-wrapper">
+      <div className="button-wrapper">
+        <button onClick={() => navigate(-1)}> Back</button>
+      </div>
+      <div>
+        <ThemeSwitch />
+      </div>
       {
         pokemon !== undefined
           ?
           <div className="detail-card">
-            <div className="button-wrapper">
-              <button onClick={() => navigate(-1)}> Back</button>
-            </div>
             <div className="detail-card-background">
               <img
                 className="detail-image"

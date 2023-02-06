@@ -1,9 +1,4 @@
-.theme-switch {
-  justify-content: flex-end;
-  margin: 0.5rem;
-}
-
-.theme-switch button{
-  border: rgba(255,0,0,0.3);
+.theme-button {
+  border: rgba(255, 0, 0, 0.3);
   border-radius: 20px;
 }

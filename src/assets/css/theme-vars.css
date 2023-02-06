@@ -16,6 +16,7 @@
   --color-button: rgba(0, 0, 0, 0.54);
   --color-button-active: #fff;
   --color-button-hover: rgba(255, 255, 255, 0.08);
+  --color-button-text: var(--text-primary);
   --color-divider: rgba(255, 255, 255, 0.12);
 }
 
@@ -27,6 +28,7 @@
   --color-background-card: #f5f7fa;
   --color-button: #CBD2D9;
   --color-button-active: #1F2933;
+  --color-button-text: var(--text-primary);
   --color-button-hover: rgba(0, 0, 0, 0.04);
   --color-divider: rgba(0, 0, 0, 0.12);
 }
@@ -34,7 +36,6 @@
 
 :root {
   --color-button: linear-gradient(180deg, #30404f 50%, #5196c5 50%);
-  --color-button-text: #FFFFFF;
   --color-primary: #0A285F;
   --color-primary-hover: #0075BE;
 }

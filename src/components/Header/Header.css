@@ -5,6 +5,9 @@
   position: absolute;
   right: 0;
   top: 0;
+  justify-content: flex-end;
+  margin: 0.5rem;
+
 }
 .logo-wrapper {
   display: flex;
