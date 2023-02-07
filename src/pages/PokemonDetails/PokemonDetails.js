@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { ThemeSwitch } from '../../components'
-import { capitalizeFirstLetter } from '../../services/capitalizeFirstLetter'
-import getPokemonByName from '../../services/getPokemonByName'
+import { capitalizeFirstLetter } from '../../services/utils'
+import getPokemonByName from '../../services/api'
 import './PokemonDetails.css'
 
 

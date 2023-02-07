@@ -1,13 +1,14 @@
 import { useState } from 'react'
-import { getPokemon } from '../../services/getPokemon'
+import { getPokemon } from '../../services/api'
 import { useNavigate } from 'react-router-dom'
-import { capitalizeFirstLetter } from '../../services/capitalizeFirstLetter'
+import { capitalizeFirstLetter } from '../../services/utils'
 import loader from '../../assets/images/loader.svg'
 import './Card.css'
 
 export default function Card({ url }) {
   const [data, setData] = useState()
   const navigateTo = useNavigate()
+
   getPokemon(url).then((res) => {
     setData(res)
   })
@@ -32,7 +33,7 @@ export default function Card({ url }) {
 						</span>))}
               </div>
             </article>)
-          : <img src={loader} alt='Loader'/>
+          : <img src={loader} alt="Loader"/>
       }
     </div>
   )

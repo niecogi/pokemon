@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { getPokemons } from '../../services/getPokemons'
+import { getPokemons } from '../../services/api'
 import { Cards, Pagination, Header, ViewMode, Searchbar } from '../../components'
-import './PokemonList.css'
 import { useNavigate } from 'react-router-dom'
+import './PokemonList.css'
 
 export default function PokemonList() {
   const [data, setData] = useState([])
