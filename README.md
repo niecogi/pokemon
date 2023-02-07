@@ -71,7 +71,8 @@ The process could be summarized in the following points:
 ### Future proposals
 - Add testing.
 - Add some animations in the web page.
-- Upgrade the design of the page, probably try to imitate the old pokemon cards with CSS
+- Upgrade the design of the page, probably try to imitate the old pokemon cards with CSS.
+- Display more information to the user about API requests, why did it go wrong?
 - Centralize pokemons with the context.
 - Try to decouple some components.
 
