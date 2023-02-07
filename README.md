@@ -78,3 +78,4 @@ The process could be summarized in the following points:
 - Documentation about PokeApi https://pokeapi.co/docs/v2
 - Documentation of the package of react router dom https://reactrouter.com/en/main
 - Color palette for light & dark mode https://mui.com/material-ui/customization/color/
+- Netlify deploy https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/
