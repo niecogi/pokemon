@@ -12,6 +12,7 @@ Features that can be found in this frontend project are the following:
   - a detail view with complete and detailed information about the Pokemons that has been selected.
 - Pagination for displaying large numbers of Pokemons
 - List and grid mode
+- Search bar to find the Pokemons
 - 🌑 Dark and 🌞Light mode (with CSS variables)
 - 🚀 Deployed in Netlify for easy previewing of the project
 
