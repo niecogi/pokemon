@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Context from './Context.js'
 
-export default function ({ children, value:defaultValue }) {
-
-  const [value, setValue] = useState(defaultValue)
+export default function ({ children, value}) {
 
   return (
     <Context.Provider value={value}>
