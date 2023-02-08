@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import Routes from './routes'
 import './assets/css/App.css'
 import Provider from './context/Provider'
+import { PokemonDetails, PokemonList } from './pages'
 
 
 export default function App() {
@@ -14,9 +15,13 @@ export default function App() {
   return (
     <Provider value={{theme, changeTheme}}>
       <div className="App" id={theme}>
-        <HashRouter>
-          <Routes/>
-        </HashRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<PokemonList/>}/>
+            <Route path='*' element={<PokemonList/>}/>
+            <Route path='pokemon/:pokemonName' element={<PokemonDetails/>}/>
+          </Routes>
+        </BrowserRouter>
       </div>
     </Provider>
   )
