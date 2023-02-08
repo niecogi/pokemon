@@ -1,9 +1,10 @@
 import React from 'react'
-import './Pagination.css'
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi'
+import './Pagination.css'
 
 export default function Pagination(props) {
   const { onLeftClick, onRightClick, page, totalPages } = props
+
   return (
     <div className='pagination'>
       <button

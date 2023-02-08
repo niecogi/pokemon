@@ -1,45 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { getPokemons } from '../../services/api'
+import React from 'react'
 import { Cards, Pagination, Header, ViewMode, Searchbar } from '../../components'
-import { useNavigate } from 'react-router-dom'
+import { usePokemons, useMode } from '../../hooks'
+import onSearch from '../../services/utils'
 import './PokemonList.css'
 
 export default function PokemonList() {
-  const [data, setData] = useState([])
-  const [page, setPage] = useState(0)
-  const [total, setTotal] = useState(0)
-  const [mode, setMode] = useState('grid')
-  const navigateTo = useNavigate()
-
-  useEffect(() => {
-    getPokemons(25, 25 * page).then((res) => {
-      setData(res.results)
-      setTotal(Math.ceil(res.count / 25))
-    })
-  }, [page])
-
-  function lastPage() {
-    const nextPage = Math.max(page - 1, 0)
-    setPage(nextPage)
-  }
-
-  function nextPage() {
-    const nextPage = Math.min(page + 1, total - 1)
-    setPage(nextPage)
-  }
-
-  function listViewMode() {
-    setMode('list')
-  }
-
-  function gridViewMode() {
-    setMode('grid')
-  }
-  function onSearch(pokemon) {
-    if(pokemon !== null && pokemon.length !== 0){
-      navigateTo(`pokemon/${pokemon}`)
-    }
-  }
+  const { data, total, page, lastPage, nextPage } = usePokemons()
+  const { mode, listViewMode, gridViewMode } = useMode()
 
   return (
     <div className="pokemons-wrapper" id={mode}>
@@ -47,7 +14,7 @@ export default function PokemonList() {
       <Searchbar
         onSearch={onSearch}
       />
-      <div className='function-wrapper'>
+      <div className="function-wrapper">
         <Pagination
           page={page + 1}
           totalPages={total}

@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Searchbar.css'
 
 export default function Searchbar({ onSearch } ) {
   const [search, setSearch] = useState('')
+  const navigateTo = useNavigate()
 
   function onClick() {
-    onSearch(search)
+    onSearch(search, navigateTo)
   }
 
   function onChange(e) {
