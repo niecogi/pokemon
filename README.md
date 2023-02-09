@@ -1,6 +1,6 @@
 # Pokedex
 - [About the project](#About-the-project)
-- [How to run the solution?](#How-to-run-the-solution?)
+- [How to run the solution?](#How-to-run-the-solution)
 - [More info](#More-info)
 ## About the project
 The project starts from the idea of creating a web page to consult the [Pokémon](https://en.wikipedia.org/wiki/Pok%C3%A9mon) and in this way learn and practice different skills. 
@@ -16,7 +16,7 @@ Features that can be found in this frontend project are the following:
 - 🌑 Dark and 🌞Light mode (with CSS variables)
 - 🚀 Deployed in Netlify for easy previewing of the project
 
-## How to run the solution?
+## How to run the solution
 
 You can access a deployed version on netlify at the following link [pokemon-test-front.netlify.app](https://pokemon-test-front.netlify.app/)
 
@@ -71,7 +71,8 @@ The process could be summarized in the following points:
 ### Future proposals
 - Add testing.
 - Add some animations in the web page.
-- Upgrade the design of the page, probably try to imitate the old pokemon cards with CSS
+- Upgrade the design of the page, probably try to imitate the old pokemon cards with CSS.
+- Display more information to the user about API requests, why did it go wrong?
 - Centralize pokemons with the context.
 - Try to decouple some components.
 
