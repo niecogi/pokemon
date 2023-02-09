@@ -13,6 +13,7 @@ Features that can be found in this frontend project are the following:
 - Pagination for displaying large numbers of Pokemons
 - List and grid mode
 - Search bar to find the Pokemons
+- 💥 Not Found page (404) for those routes that do not exist.
 - 🌑 Dark and 🌞Light mode (with CSS variables)
 - 🚀 Deployed in Netlify for easy previewing of the project
 
@@ -64,9 +65,10 @@ The process could be summarized in the following points:
   - Solution: Read the documentation better and see what it returns.
 - Issues with CORS & very large amount of requests
   - Solution: Apply pagination in the requests
+- Issues with refactor code.
+  - Solution: Use custom hooks, usestate, useffect and context.
 - Issues with no-resizable grid.
-  - Solution: [CSS tricks without media queries](https://youtu.be/El0OJ6h_2ZI) 
-
+  - Solution: [CSS tricks without media queries](https://youtu.be/El0OJ6h_2ZI)
 
 ### Future proposals
 - Add testing.
@@ -80,4 +82,5 @@ The process could be summarized in the following points:
 - Documentation about PokeApi https://pokeapi.co/docs/v2
 - Documentation of the package of react router dom https://reactrouter.com/en/main
 - Color palette for light & dark mode https://mui.com/material-ui/customization/color/
+- Routes with React: [BrowserRoutes](https://reactrouter.com/en/main/router-components/browser-router) vs [HashRoutes](https://reactrouter.com/en/main/router-components/hash-router)
 - Netlify deploy https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/
