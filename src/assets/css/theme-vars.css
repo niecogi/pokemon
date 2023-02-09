@@ -26,7 +26,7 @@
 
 :root #light {
   --color-background: white;
-  --text-primary: rgba(0, 0, 0, 0.87) ;
+  --text-primary: #363636 ;
   --text-secondary: rgba(0, 0, 0, 0.6);
   --text-disabled: rgba(0, 0, 0, 0.38);
   --color-background-card: #f5f7fa;

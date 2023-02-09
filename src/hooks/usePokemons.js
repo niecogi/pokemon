@@ -8,7 +8,10 @@ export default function usePokemons() {
 
   useEffect(() => {
     getPokemons(25, 25 * page).then((res) => {
-      setData(res.results)
+      setData(res.results?.map(pokemon => ({
+        name: pokemon.name,
+        url: pokemon.url
+      })))
       setTotal(Math.ceil(res.count / 25))
     })
   }, [page])

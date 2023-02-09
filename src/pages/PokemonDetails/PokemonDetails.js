@@ -49,7 +49,7 @@ export default function PokemonDetails() {
             </div>
             <div className="pokemon-stats">
               {pokemon.stats.map(stat => (
-                <ul>
+                <ul key={stat.id}>
                   <li>
                     <p>{`${capitalizeFirstLetter(stat.stat.name.replace('-', ' '))}: ${stat.base_stat}`} </p>
                   </li>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
-import Routes from './routes'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Provider from './context/Provider'
 import { NotFound, PokemonDetails, PokemonList } from './pages'
 import './assets/css/App.css'

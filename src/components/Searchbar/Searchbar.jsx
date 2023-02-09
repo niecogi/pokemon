@@ -29,7 +29,6 @@ export default function Searchbar({ onSearch } ) {
         className="input-search"
         onChange={onChange}
         onKeyDown={handleKeyDown}
-
       />
       <button onClick={onClick}>
         Search
