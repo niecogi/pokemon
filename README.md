@@ -69,6 +69,8 @@ The process could be summarized in the following points:
   - Solution: Use custom hooks, usestate, useffect and context.
 - Issues with no-resizable grid.
   - Solution: [CSS tricks without media queries](https://youtu.be/El0OJ6h_2ZI)
+- Issues with the deploy in Netlify.
+  - Add in a folder called `public` a file called `_redirects` containing the main route
 
 ### Future proposals
 - Add testing.
