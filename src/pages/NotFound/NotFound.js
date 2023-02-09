@@ -1,10 +1,9 @@
-import { Fragment } from 'react'
 import img from '../../assets/images/404.png'
 
 export default function NotFound(){
   return (
-    <Fragment>
+    <div className='notfound-wrapper'>
       <img src={img} alt='404 Not Found'/>
-    </Fragment>
+    </div>
   )
 }
