@@ -38,7 +38,7 @@ export default function PokemonDetails() {
                 alt={`${pokemon.name}`}/>
             </div>
             <div className="detail-pokemon-name">
-              <h4>{capitalizeFirstLetter(pokemon.forms[0].name)}</h4>
+              <h2>{capitalizeFirstLetter(pokemon.forms[0].name)}</h2>
             </div>
             <div className="card-types">
               {pokemon.types.map(type => (
