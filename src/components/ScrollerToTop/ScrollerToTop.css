@@ -1,0 +1,11 @@
+.scroller-wrapper {
+  float: left;
+  position: fixed;
+  bottom: 0;
+  margin: 8px;
+}
+
+.scroller-button {
+  border-radius: 16px;
+  height: 40px;
+}
