@@ -70,7 +70,9 @@ The process could be summarized in the following points:
 - Issues with no-resizable grid.
   - Solution: [CSS tricks without media queries](https://youtu.be/El0OJ6h_2ZI)
 - Issues with the deploy in Netlify.
-  - Add in a folder called `public` a file called `_redirects` containing the main route
+  - Solution: Add in a folder called `public` a file called `_redirects` containing the main route
+- Issues with the font style.
+  - Solution: Add a [Custom font file](https://dev.to/ziqinyeow/how-to-add-custom-font-file-to-your-react-app-31kb) in the project.
 
 ### Future proposals
 - Add testing.
