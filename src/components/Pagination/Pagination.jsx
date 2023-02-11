@@ -1,5 +1,5 @@
 import React from 'react'
-import { BiLeftArrow, BiRightArrow } from 'react-icons/bi'
+import { VscTriangleLeft, VscTriangleRight } from 'react-icons/vsc'
 import './Pagination.css'
 
 export default function Pagination(props) {
@@ -9,13 +9,13 @@ export default function Pagination(props) {
     <div className='pagination'>
       <button
         className='btn-left'
-        onClick={onLeftClick}> <BiLeftArrow className='icon' size='1.5rem'/> </button>
+        onClick={onLeftClick}> <VscTriangleLeft className='icon' size='1.5rem'/> </button>
       <p>
-        {page} de {totalPages}
+        {page} of {totalPages}
       </p>
       <button
         className='btn-right'
-        onClick={onRightClick}> <BiRightArrow className='icon' size='1.5rem'/> </button>
+        onClick={onRightClick}> <VscTriangleRight className='icon' size='1.5rem'/> </button>
     </div>
   )
 }

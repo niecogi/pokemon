@@ -1,5 +1,6 @@
 import React from 'react'
-import { Cards, Pagination, Header, ViewMode, Searchbar } from '../../components'
+import { Cards, Pagination, Header, ViewMode, Searchbar, ScrollerToTop }
+  from '../../components'
 import { usePokemons, useMode } from '../../hooks'
 import onSearch from '../../services/utils'
 import './PokemonList.css'
@@ -24,6 +25,9 @@ export default function PokemonList() {
           listViewMode={listViewMode}
           gridViewMode={gridViewMode}
         />
+      </div>
+      <div className='scroller-wrapper'>
+        <ScrollerToTop />
       </div>
       <Cards values={data}/>
     </div>

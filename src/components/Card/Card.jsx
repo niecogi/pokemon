@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { getPokemon } from '../../services/api'
 import { useNavigate } from 'react-router-dom'
+import { getPokemon } from '../../services/api'
 import { capitalizeFirstLetter } from '../../services/utils'
 import loader from '../../assets/images/loader.svg'
+import { PokemonType } from '../../components'
 import './Card.css'
 
 export default function Card({ url }) {
@@ -26,13 +27,9 @@ export default function Card({ url }) {
               <img
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`}
                 alt={`${data.name}`}/>
-              <div className="card-types">
-                {data.types.map(type => (
-                  <span key={type.type.name} className={type.type.name}>
-							{type.type.name}
-						</span>))}
-              </div>
-            </article>)
+              <PokemonType data={data} />
+            </article>
+          )
           : <img src={loader} alt="Loader"/>
       }
     </div>

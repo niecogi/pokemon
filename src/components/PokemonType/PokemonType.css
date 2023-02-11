@@ -1,0 +1,92 @@
+.card-types {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+  order: 4;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-types span {
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: var(--font-size-types);
+
+}
+
+/* Types of PokemonList */
+.water {
+  background-color: var(--color-water);
+}
+
+.grass {
+  background-color: var(--color-grass);
+}
+
+.poison {
+  background-color: var(--color-poison);
+}
+
+.fire {
+  background-color: var(--color-fire);
+}
+
+.bug {
+  background-color: var(--color-bug);
+}
+
+.dragon {
+  background: var(--color-dragon);
+}
+
+.flying {
+  background-color: var(--color-flying);
+}
+
+.ground {
+  background-color: var(--color-ground);
+  color: rgba(31, 42, 51, 0.63) !important;
+}
+
+.steel {
+  background-color: var(--color-steel);
+}
+
+.psychic {
+  background-color: var(--color-psychic);
+}
+
+.ice {
+  background-color: var(--color-ice);
+}
+
+.ghost {
+  background-color: var(--color-ghost);
+}
+
+.normal {
+  background-color: var(--color-normal);
+}
+
+.rock {
+  background-color: var(--color-rock);
+}
+
+.electric {
+  background-color: var(--color-electric);
+  color: rgba(31, 42, 51, 0.63) !important;
+}
+
+
+.fighting {
+  background-color: var(--color-fighting);
+}
+
+.fairy {
+  background-color: var(--color-fairy);
+}
+
+.dark {
+  background-color: var(--color-dark);
+}

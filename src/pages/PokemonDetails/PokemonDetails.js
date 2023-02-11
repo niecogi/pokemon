@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ThemeSwitch } from '../../components'
+import { PokemonType, ScrollerToTop, ThemeSwitch } from '../../components'
 import { capitalizeFirstLetter } from '../../services/utils'
 import getPokemonByName from '../../services/api'
 import './PokemonDetails.css'
@@ -40,13 +40,7 @@ export default function PokemonDetails() {
             <div className="detail-pokemon-name">
               <h2>{capitalizeFirstLetter(pokemon.forms[0].name)}</h2>
             </div>
-            <div className="card-types">
-              {pokemon.types.map(type => (
-                <span key={type.type.name} className={type.type.name}>
-							{type.type.name}
-						</span>
-              ))}
-            </div>
+           <PokemonType data={pokemon}/>
             <div className="pokemon-stats">
               {pokemon.stats.map(stat => (
                 <ul key={stat.id}>

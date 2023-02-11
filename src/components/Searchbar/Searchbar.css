@@ -25,4 +25,7 @@
   width: 50%;
   height: 20px;
   font-size: var(--font-size);
+  padding: 4px;
+  border-radius: 9999em;
+  text-indent: 12px;
 }
