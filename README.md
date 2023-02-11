@@ -10,12 +10,12 @@ Features that can be found in this frontend project are the following:
 - APP with two views: 
   - a list view to display summary information about the Pokemons 
   - a detail view with complete and detailed information about the Pokemons that has been selected.
-- Pagination for displaying large numbers of Pokemons
+- Pagination for displaying large numbers of Pokemons & a scroller component to go to the top of the page
 - List and grid mode
-- Search bar to find the Pokemons
+- Search bar to find the Pokemons.
 - 💥 Not Found page (404) for those routes that do not exist.
-- 🌑 Dark and 🌞Light mode (with CSS variables)
-- 🚀 Deployed in Netlify for easy previewing of the project
+- 🌑 Dark and 🌞Light mode (with CSS variables).
+- 🚀 Deployed in Netlify for easy previewing of the project.
 
 ## How to run the solution
 
