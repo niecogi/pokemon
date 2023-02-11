@@ -1,0 +1,57 @@
+#light {
+  background-color: var(--color-background);
+  color: var(--text-primary)
+}
+#light button {
+  border: rgba(255,0,0,0.3);
+  color: var(--color-button-text);
+}
+#light button:hover {
+  background-color: var(--color-button-hover);
+  color: var(--color-button-text);
+}
+
+#dark button:hover {
+  background-color: var(--color-button-hover);
+
+}
+
+#dark button {
+  background-color: var(--color-button);
+  color: var(--color-button-text);
+  border: rgba(255,0,0,0.3);
+}
+
+#dark {
+  background-color: var(--color-background);
+  color: var(--text-primary)
+}
+
+.App {
+  background-color: var(--color-background);
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-weight: bold;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin: 0.83em 0;
+  font-weight: bold;
+}
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin: 1em 0;
+  font-weight: bold;
+}
+h4 {
+  display: block;
+  font-size: 1em;
+  margin: 1.33em 0;
+  font-weight: bold;
+}

@@ -1,0 +1,45 @@
+.detail-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.detail-wrapper h4 {
+  font-size: var(--font-size);
+}
+
+.detail-wrapper p {
+  font-size: var(--font-size-large);
+}
+
+.detail-wrapper img {
+  width: var(--img-width-details);
+  height: var(--img-height-details);
+}
+
+.detail-card-background {
+  background: linear-gradient(to right, #7b62a3, #0075BE);
+}
+
+.button-wrapper {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 1rem;
+}
+
+.button-wrapper button {
+  font-size: var(--font-size-button);
+}
+
+.pokemon-stats ul li {
+  gap: 1rem;
+  margin: 10px 0 5px 0;
+}
+
+.detail-pokemon-name {
+  text-align: center;
+}
