@@ -10,11 +10,12 @@ Features that can be found in this frontend project are the following:
 - APP with two views: 
   - a list view to display summary information about the Pokemons 
   - a detail view with complete and detailed information about the Pokemons that has been selected.
-- Pagination for displaying large numbers of Pokemons
+- Pagination for displaying large numbers of Pokemons & a scroller component to go to the top of the page
 - List and grid mode
-- Search bar to find the Pokemons
-- 🌑 Dark and 🌞Light mode (with CSS variables)
-- 🚀 Deployed in Netlify for easy previewing of the project
+- Search bar to find the Pokemons.
+- 💥 Not Found page (404) for those routes that do not exist.
+- 🌑 Dark and 🌞Light mode (with CSS variables).
+- 🚀 Deployed in Netlify for easy previewing of the project.
 
 ## How to run the solution
 
@@ -64,9 +65,14 @@ The process could be summarized in the following points:
   - Solution: Read the documentation better and see what it returns.
 - Issues with CORS & very large amount of requests
   - Solution: Apply pagination in the requests
+- Issues with refactor code.
+  - Solution: Use custom hooks, usestate, useffect and context.
 - Issues with no-resizable grid.
-  - Solution: [CSS tricks without media queries](https://youtu.be/El0OJ6h_2ZI) 
-
+  - Solution: [CSS tricks without media queries](https://youtu.be/El0OJ6h_2ZI)
+- Issues with the deploy in Netlify.
+  - Solution: Add in a folder called `public` a file called `_redirects` containing the main route
+- Issues with the font style.
+  - Solution: Add a [Custom font file](https://dev.to/ziqinyeow/how-to-add-custom-font-file-to-your-react-app-31kb) in the project.
 
 ### Future proposals
 - Add testing.
@@ -80,4 +86,5 @@ The process could be summarized in the following points:
 - Documentation about PokeApi https://pokeapi.co/docs/v2
 - Documentation of the package of react router dom https://reactrouter.com/en/main
 - Color palette for light & dark mode https://mui.com/material-ui/customization/color/
+- Routes with React: [BrowserRoutes](https://reactrouter.com/en/main/router-components/browser-router) vs [HashRoutes](https://reactrouter.com/en/main/router-components/hash-router)
 - Netlify deploy https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/
