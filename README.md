@@ -19,7 +19,7 @@ Features that can be found in this frontend project are the following:
 
 ## How to run the solution
 
-You can access a deployed version on netlify at the following link [pokemon-test-front.netlify.app](https://pokemon-test-front.netlify.app/)
+You can access a deployed version on netlify at the following link [pokedex.nieves.codes](https://pokedex.nieves.codes/)
 
 or
 
@@ -50,13 +50,13 @@ The following sections provide information on the software development process, 
 ### Development process
 
 The process could be summarized in the following points:
-1. Read the proposed requirements
-2. Create a series of simple mockups of the contents of the webpage
-3. Start a project with create-react-app & refactor its structure
-4. Configure the route of the pages, structure the content & create components and containers(pages)
-5. Create the necessary functions and services (calls to the api among others)
-6. Stylize the style of the page (CSS)
-7. Deploy (Netlify)
+1. Read the proposed requirements.
+2. Create a series of simple mockups of the contents of the webpage.
+3. Start a project with create-react-app & refactor its structure.
+4. Configure the route of the pages, structure the content & create components and containers(pages).
+5. Create the necessary functions and services (calls to the api among others).
+6. Stylize the style of the page (CSS).
+7. Deploy (Netlify) & change domain.
 
 
 ### Issues and solutions
