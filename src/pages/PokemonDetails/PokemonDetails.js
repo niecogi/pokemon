@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { PokemonType, ScrollerToTop, ThemeSwitch } from '../../components'
+import { PokemonType, ThemeSwitch } from '../../components'
 import { capitalizeFirstLetter } from '../../services/utils'
 import getPokemonByName from '../../services/api'
 import './PokemonDetails.css'
