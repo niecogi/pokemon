@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getPokemon } from '../../services/api'
 import { capitalizeFirstLetter } from '../../services/utils'
@@ -10,9 +10,13 @@ export default function Card({ url }) {
   const [data, setData] = useState()
   const navigateTo = useNavigate()
 
-  getPokemon(url).then((res) => {
-    setData(res)
-  })
+  useEffect(() => {
+    getPokemon(url).then((res) => {
+      setData(res)
+    })
+
+  }, [])
+
   return (
     <div className="card-wrapper"
          onClick={() => navigateTo(`pokemon/${data.forms[0].name}`)}>
