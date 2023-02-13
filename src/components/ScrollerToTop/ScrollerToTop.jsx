@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsTriangleFill } from 'react-icons/bs'
+import { BiArrowToTop } from 'react-icons/bi'
 import './ScrollerToTop.css'
 
 export default function ScrollerToTop() {
@@ -9,8 +9,7 @@ export default function ScrollerToTop() {
 
   return (
     <button className='scroller-button' onClick={onClick}>
-      <BsTriangleFill size='1.3rem'/>
+      <BiArrowToTop size='1.3rem'/>
     </button>
-
   )
 }
