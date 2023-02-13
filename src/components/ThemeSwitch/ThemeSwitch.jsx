@@ -9,7 +9,6 @@ export default function ThemeSwitch() {
   const darkIcon = <FiSun size="1.8em" className="icon"/>
 
   const icon = theme === 'light' ? lightIcon : darkIcon
-  console.log(theme)
 
   return (
     <button className="theme-button" onClick={changeTheme}>
