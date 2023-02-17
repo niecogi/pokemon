@@ -1,0 +1,7 @@
+.footer {
+  max-width: 800px;
+  margin: auto;
+  padding: calc((60px - 24px)/2) 24px;
+  text-align: center;
+  line-height: 24px;
+}

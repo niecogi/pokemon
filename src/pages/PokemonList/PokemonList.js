@@ -1,5 +1,5 @@
 import React from 'react'
-import { Cards, Pagination, Header, ViewMode, Searchbar, ScrollerToTop }
+import { Cards, Pagination, Header, ViewMode, Searchbar, ScrollerToTop, Footer }
   from '../../components'
 import { usePokemons, useMode } from '../../hooks'
 import onSearch from '../../services/utils'
@@ -30,6 +30,10 @@ export default function PokemonList() {
         <ScrollerToTop />
       </div>
       <Cards values={data}/>
+      <Footer
+        name={'nieves.codes'}
+        url={'https://github.com/niecogi'}
+      />
     </div>
   )
 }
