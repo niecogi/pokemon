@@ -12,6 +12,9 @@
 
 .detail-wrapper p {
   font-size: var(--font-size-large);
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .detail-wrapper img {
@@ -36,6 +39,7 @@
 }
 
 .pokemon-stats ul li {
+  display: flex;
   gap: 1rem;
   margin: 10px 0 5px 0;
 }
