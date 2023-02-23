@@ -36,6 +36,7 @@
 
 .button-wrapper button {
   font-size: var(--font-size-button);
+  padding: 0.5rem;
 }
 
 .pokemon-stats ul li {
